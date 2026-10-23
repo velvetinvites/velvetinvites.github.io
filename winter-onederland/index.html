@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Winter Onederland · Velvet Invites</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Estás invitado · You're invited">
+<meta property="og:image" content="https://velvetinvites.github.io/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>body{margin:0;min-height:100vh;background:linear-gradient(#d6efff,#7a8ef0);padding:10px 6px 30px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}</style>
+</head>
+<body>
+<h2 class="sr-only">Invitación de primer cumpleaños Winter Onederland</h2>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+<style>
+.ph{max-width:420px;margin:0 auto;background:linear-gradient(#d6efff 0%,#9cc4ff 50%,#7a8ef0 100%);border-radius:16px;padding:18px 14px 20px;font-family:'Fredoka',sans-serif;overflow:hidden}
+.pn{position:relative;background:#FBFEFF;border:3px solid #1d2a5a;border-radius:18px;padding:22px 18px;color:#1d2a5a;box-shadow:6px 6px 0 #1d2a5a}
+.pn h3{font-family:'Mochiy Pop One',sans-serif;font-weight:400;font-size:30px;text-align:center;color:#5ab8ff;margin:0;-webkit-text-stroke:2px #1d2a5a;paint-order:stroke fill}
+.lb{display:block;font-size:13px;font-weight:600;margin:10px 0 3px;color:#3a5a9a}
+.pn input,.pn textarea{width:100%;box-sizing:border-box;padding:9px;border:2.5px solid #1d2a5a;border-radius:10px;font-size:16px;font-family:'Fredoka',sans-serif;background:#fff;color:#1d2a5a}
+.bt{display:block;width:100%;box-sizing:border-box;text-align:center;margin-top:12px;padding:12px;border:3px solid #1d2a5a;border-radius:30px;background:#5ab8ff;color:#fff;font-family:'Mochiy Pop One',sans-serif;font-size:15px;cursor:pointer;box-shadow:0 4px 0 #1d2a5a}
+.bt:active{transform:translateY(3px);box-shadow:0 1px 0 #1d2a5a}
+.bt.b2{background:#a58aff}.bt.b3{background:#ffffff;color:#1d2a5a}
+.bt.al{background:#fff;color:#5ab8ff}
+.lg{display:flex;justify-content:flex-end;gap:6px;margin-bottom:10px}
+.lg button{background:#fff;border:2px solid #1d2a5a;color:#1d2a5a;font-family:'Fredoka',sans-serif;font-weight:600;padding:3px 10px;border-radius:12px;font-size:12px;cursor:pointer}
+.lg button.on{background:#5ab8ff;color:#fff}
+@keyframes tw{0%,100%{opacity:.2;transform:scale(.4) rotate(0)}50%{opacity:1;transform:scale(1) rotate(30deg)}}
+@keyframes fy{0%,100%{transform:translate(0,0)}50%{transform:translate(3px,-6px)}}
+@keyframes bl{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+@keyframes rot{to{transform:rotate(360deg)}}
+@keyframes sn{0%{transform:translateY(-30px) translateX(0)}100%{transform:translateY(470px) translateX(var(--dx))}}
+@keyframes it{0%{opacity:0;transform:translateY(12px) scale(.9);filter:blur(4px)}20%,75%{opacity:1;transform:none;filter:none}100%{opacity:0;transform:translateY(-12px);filter:blur(4px)}}
+@keyframes fla{0%{opacity:0}25%{opacity:.95}100%{opacity:0}}
+@keyframes boom{0%{transform:translate(-50%,-50%) scale(.2);opacity:1}100%{transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) rotate(var(--r)) scale(1);opacity:0}}
+@keyframes pop{0%{opacity:0;transform:scale(.3) translateY(10px)}100%{opacity:1;transform:none}}
+@keyframes bo{50%{transform:scale(1.08)}}
+@keyframes wv{0%,100%{transform:rotate(0)}50%{transform:rotate(-18deg)}}
+.stg{position:relative;height:440px;overflow:hidden;border-radius:12px;transition:transform 1.4s cubic-bezier(.4,0,.2,1)}
+.stg.zm{transform:scale(1.2)}
+.bar{position:absolute;left:0;right:0;height:48px;background:#0c1638;z-index:20;transition:transform 1s cubic-bezier(.4,0,.2,1)}
+.bar.t{top:0;transform:translateY(-100%)}.bar.b{bottom:0;transform:translateY(100%)}
+.stg.cine .bar{transform:none}
+.intro{position:absolute;left:0;right:0;top:150px;text-align:center;z-index:15;pointer-events:none}
+.intro p{opacity:0;margin:8px 0;font-family:'Mochiy Pop One',sans-serif;color:#fff;-webkit-text-stroke:1.5px #1d2a5a;paint-order:stroke fill}
+.intro .a{font-size:18px}.intro .b{font-size:23px;color:#dff3ff}
+.stg.cine .intro .a{animation:it 2.4s ease .5s forwards}
+.stg.cine .intro .b{animation:it 2.4s ease 1.6s forwards}
+.tp{position:relative;z-index:16;text-align:center;color:#fff;font-family:'Mochiy Pop One',sans-serif;font-size:15px;margin:58px 0 0;-webkit-text-stroke:1.5px #1d2a5a;paint-order:stroke fill;opacity:0;transition:opacity .6s}
+.stg.go .tp{opacity:1;animation:bo 1s ease-in-out infinite}
+.stg.zm .tp{opacity:0;animation:none}
+.rays{position:absolute;left:50%;top:285px;width:640px;height:640px;margin:-320px 0 0 -320px;opacity:0;transition:opacity 1.2s;z-index:0;pointer-events:none}
+.rays svg{animation:rot 24s linear infinite}
+.stg.go .rays{opacity:.35}.stg.zm .rays{opacity:.9}
+.snow{position:absolute;inset:0;pointer-events:none;z-index:1}
+.snow i{position:absolute;top:0;width:8px;height:8px;border-radius:50%;background:#fff;opacity:.85;animation:sn linear infinite}
+.env{position:absolute;left:50%;top:180px;width:300px;height:210px;margin-left:-150px;cursor:pointer;perspective:1100px;transform:translateY(-480px) rotate(10deg);z-index:5}
+.stg.go .env{transform:none;transition:transform 1.2s cubic-bezier(.3,1.45,.5,1)}
+.env>*{position:absolute;left:0;top:0;overflow:visible}
+.cd{left:16px;top:12px;z-index:2;transition:transform 1.2s cubic-bezier(.3,1.4,.4,1) 1.4s}
+.fr{z-index:3}
+.flw{width:300px;height:126px;z-index:4;transform-origin:top;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.3,1.3,.5,1) .75s}
+.flw svg{position:absolute;top:0;left:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:visible}
+.flw .fb{transform:rotateX(180deg)}
+.rb{z-index:6;transition:transform .9s ease,opacity .7s}
+.se{z-index:7;left:113px;top:82px;transition:transform .6s cubic-bezier(.3,1.6,.5,1) .25s,opacity .5s .4s}
+.sp{z-index:8;pointer-events:none}
+.env.op .rb{transform:translateX(-80px) rotate(-12deg);opacity:0}
+.env.op .se{transform:translateY(-30px) scale(1.5) rotate(-30deg);opacity:0}
+.env.op .flw{transform:rotateX(180deg);z-index:1}
+.env.op .cd{transform:translateY(-64%)}
+.fls{position:absolute;inset:0;background:#fff;opacity:0;z-index:18;pointer-events:none}
+.fls.on{animation:fla 1s ease}
+.pt{position:absolute;left:50%;top:285px;z-index:17;pointer-events:none;animation:boom 1.8s cubic-bezier(.1,.8,.3,1) forwards}
+.st{transform-box:fill-box;transform-origin:center;animation:tw 2.2s infinite}
+.fly{animation:fy 2.8s ease-in-out infinite}
+.ey{transform-box:fill-box;transform-origin:center;animation:bl 4s infinite}
+.arm{transform-box:fill-box;transform-origin:left bottom;animation:wv 1s ease-in-out infinite}
+.iv{position:relative;background:#FBFEFF;border:3px solid #1d2a5a;border-radius:20px;box-shadow:6px 6px 0 #1d2a5a;padding:40px 22px 30px;color:#1d2a5a;text-align:center;opacity:0;transform:scale(.6) rotate(-4deg);transition:all .8s cubic-bezier(.3,1.5,.5,1)}
+.iv.sh{opacity:1;transform:none}
+.iv .sg{opacity:0}
+.iv.sh .sg{animation:pop .6s cubic-bezier(.3,1.6,.5,1) both}
+.ovl{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;border-radius:18px}
+.iv>*:not(.ovl):not(.cn),.pn>*:not(.ovl){position:relative}
+.sm{font-size:13px;font-weight:600;letter-spacing:1px;margin:0;color:#3a5a9a}
+.iv h3{font-family:'Mochiy Pop One',sans-serif;font-weight:400;font-size:44px;color:#5ab8ff;margin:4px 0;-webkit-text-stroke:2.5px #1d2a5a;paint-order:stroke fill}
+.ms{font-size:15px;margin:6px 0 10px;color:#3a5a9a}
+.inf{font-size:15px;line-height:1.6;margin:10px 0;font-weight:600}
+.big{font-size:18px}
+.tag{display:inline-block;background:#1d2a5a;color:#dff3ff;font-size:11px;letter-spacing:1.5px;padding:2px 10px;border-radius:10px;margin-bottom:3px}
+.er{color:#e0003a;font-size:13px;text-align:center;margin:8px 0 0;font-weight:600}
+.hd{display:none}
+.cn{position:absolute;overflow:visible;pointer-events:none}
+.snd{display:block;margin:8px auto 0;background:transparent;border:none;color:#1d2a5a;font-family:'Fredoka',sans-serif;font-size:12px;cursor:pointer;opacity:.8}
+</style>
+<div class="ph">
+<svg width="0" height="0" style="position:absolute"><defs>
+<pattern id="ht" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.6" fill="#5ab8ff" opacity=".3"/></pattern>
+<pattern id="lin" width="18" height="18" patternUnits="userSpaceOnUse"><rect width="18" height="18" fill="#dff3ff"/><g transform="translate(9 9)" stroke="#5ab8ff" stroke-width="1.4" stroke-linecap="round"><line y1="-5" y2="5"/><line x1="-4.3" y1="-2.5" x2="4.3" y2="2.5"/><line x1="-4.3" y1="2.5" x2="4.3" y2="-2.5"/></g></pattern>
+<radialGradient id="rg" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+</defs></svg>
+<div class="lg"><button data-l="en">EN</button><button data-l="es">ES</button></div>
+<div id="cr" class="pn">
+<h3 data-t="title"></h3>
+<p class="sm" style="text-align:center;font-weight:400" data-t="sub"></p>
+<label class="lb" data-t="kid"></label><input id="fe" value="Martina">
+<label class="lb" data-t="age"></label><input id="fa" type="number" min="1" max="99" value="1">
+<div style="display:flex;gap:8px"><div style="flex:1"><label class="lb" data-t="date"></label><input id="fd" type="date" value="2026-12-12"></div><div style="flex:1"><label class="lb" data-t="time"></label><input id="ft" type="time" value="12:30"></div></div>
+<label class="lb" data-t="place"></label><input id="fp" value="Casa de los abuelos, Málaga">
+<label class="lb" data-t="msg"></label><textarea id="fm" rows="2">¡Nuestro copito de nieve cumple su primer añito!</textarea>
+<label class="lb" data-t="dress"></label><input id="fc" value="Colores de invierno: blanco, azul y plata">
+<label class="lb" data-t="rsvpBy"></label><input id="fr" type="date" value="2026-12-05">
+<label class="lb" data-t="phone"></label><input id="fw" type="tel" value="+34 600 123 456">
+<button class="bt" id="bc" data-t="create"></button>
+<p class="er hd" id="er" data-t="need"></p>
+</div>
+<div id="vw" class="hd">
+<div class="stg" id="ew">
+<div class="rays"><svg width="640" height="640" viewBox="-320 -320 640 640" id="rys"></svg></div>
+<div class="snow" id="snow"></div>
+<svg width="388" height="440" viewBox="0 0 388 440" style="position:absolute;left:50%;top:0;margin-left:-194px;pointer-events:none;z-index:1" id="bgs"></svg>
+<div class="intro"><p class="a" data-t="i1"></p><p class="b" data-t="i2"></p></div>
+<p class="tp" data-t="tap"></p>
+<div class="env" id="env">
+<svg width="300" height="210" viewBox="0 0 300 210"><rect x="6" y="8" width="300" height="210" rx="8" fill="#1d2a5a" opacity=".3"/><rect width="300" height="210" rx="8" fill="#cbe6ff" stroke="#1d2a5a" stroke-width="3"/><polygon points="6,6 294,6 150,116" fill="url(#lin)" stroke="#1d2a5a" stroke-width="2.5"/></svg>
+<svg class="cd" width="268" height="186" viewBox="0 0 268 186"><rect x="1.5" y="1.5" width="265" height="183" rx="10" fill="#FBFEFF" stroke="#1d2a5a" stroke-width="3"/><rect x="1.5" y="1.5" width="265" height="40" rx="10" fill="url(#ht)"/><text id="cs" x="134" y="34" text-anchor="middle" font-family="Fredoka, sans-serif" font-weight="600" font-size="11" fill="#3a5a9a"></text><text id="cp" x="134" y="76" text-anchor="middle" font-family="Mochiy Pop One, sans-serif" font-size="30" fill="#5ab8ff" stroke="#1d2a5a" stroke-width="2" paint-order="stroke"></text></svg>
+<svg class="fr" width="300" height="210" viewBox="0 0 300 210">
+<path d="M0,8 Q0,0 8,0 L160,118 L8,210 Q0,210 0,202Z" fill="#e3f2ff" stroke="#1d2a5a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M300,8 Q300,0 292,0 L140,118 L292,210 Q300,210 300,202Z" fill="#d4ebff" stroke="#1d2a5a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M0,202 L150,92 L300,202 Q300,210 292,210 L8,210 Q0,210 0,202Z" fill="#eef8ff" stroke="#1d2a5a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M0,202 L150,92 L190,121 L40,210 L8,210 Q0,210 0,202Z" fill="#fff" opacity=".5"/>
+<g id="envst"></g></svg>
+<div class="flw"><svg width="300" height="126" viewBox="0 0 300 126"><path d="M4,0 L296,0 L150,120Z" fill="#b8dcff" stroke="#1d2a5a" stroke-width="3" stroke-linejoin="round"/><path d="M4,0 L120,0 L150,120Z" fill="#fff" opacity=".4"/><g id="flst"></g></svg>
+<svg class="fb" width="300" height="126" viewBox="0 0 300 126"><path d="M4,0 L296,0 L150,120Z" fill="url(#lin)" stroke="#1d2a5a" stroke-width="3" stroke-linejoin="round"/></svg></div>
+<svg class="rb" width="300" height="210" viewBox="0 0 300 210">
+<rect x="-2" y="98" width="304" height="22" fill="#a58aff" stroke="#1d2a5a" stroke-width="3"/><rect x="-2" y="102" width="304" height="5" fill="#fff" opacity=".6"/>
+<path d="M72,116 L52,166 L62,160 L68,172 L84,118Z" fill="#a58aff" stroke="#1d2a5a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M84,116 L108,162 L97,158 L93,170 L74,118Z" fill="#8a6ae8" stroke="#1d2a5a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M78,108 C50,70 16,84 24,108 C18,134 52,144 78,108Z" fill="#a58aff" stroke="#1d2a5a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M78,108 C106,70 140,84 132,108 C138,134 104,144 78,108Z" fill="#a58aff" stroke="#1d2a5a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M34,96 C42,86 56,88 64,96" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M122,96 C114,86 100,88 92,96" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="78" cy="108" rx="11" ry="12" fill="#c2adff" stroke="#1d2a5a" stroke-width="3"/><ellipse cx="75" cy="103" rx="3.5" ry="4" fill="#fff"/>
+<g id="hol"></g></svg>
+<svg class="se" width="74" height="74" viewBox="-37 -37 74 74"><path id="wp" fill="#ffffff" stroke="#1d2a5a" stroke-width="3" stroke-linejoin="round"/><circle r="20" fill="#5ab8ff" stroke="#1d2a5a" stroke-width="2.5"/><g id="sf" stroke="#fff" stroke-width="2.6" stroke-linecap="round"></g><path d="M-12,-6 A13,13 0 0 1 -5,-12" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity=".8"/></svg>
+<svg class="sp" id="spr" width="300" height="210" viewBox="0 0 300 210"></svg>
+</div>
+<div class="fls" id="fls"></div>
+<div id="pts"></div>
+<div class="bar t"></div><div class="bar b"></div>
+</div>
+<div class="iv hd" id="iv">
+<svg class="ovl"><rect width="100%" height="34%" fill="url(#ht)"/></svg>
+<svg class="cn" id="cnL" width="120" height="100" style="left:-26px;top:-30px"></svg>
+<svg class="cn" id="cnR" width="120" height="110" style="right:-26px;bottom:-34px"></svg>
+<p class="sm sg" style="animation-delay:.3s" data-t="invited"></p>
+<h3 class="sg" style="animation-delay:.5s" id="ie"></h3>
+<svg class="sg" id="burst" width="130" height="130" viewBox="-65 -65 130 130" style="display:block;margin:0 auto;animation-delay:.8s"></svg>
+<p class="ms sg" style="animation-delay:1s" id="im"></p>
+<div class="inf big sg" style="animation-delay:1.15s"><span id="idt"></span><br><span id="iti"></span></div>
+<div class="inf sg" style="animation-delay:1.3s"><span class="tag" data-t="where"></span><br><span id="ip"></span></div>
+<div class="inf sg" style="animation-delay:1.45s" id="icw"><span class="tag" data-t="dressL"></span><br><span id="ic"></span></div>
+<button class="bt sg" style="animation-delay:1.6s" id="am" data-t="maps"></button>
+<button class="bt b2 sg" style="animation-delay:1.7s" id="ac" data-t="cal"></button>
+<button class="bt b3 sg" style="animation-delay:1.8s" id="ar" data-t="rsvp"></button>
+<p class="sm sg" id="irw" style="margin-top:14px;animation-delay:1.9s"><span data-t="replyBy"></span> <span id="ir"></span></p>
+</div>
+<button class="snd" id="snd"></button>
+<button class="bt al" id="rp" data-t="replay"></button>
+<button class="bt al" id="bb" data-t="back"></button>
+</div>
+</div>
+<script>
+const T={en:{title:"Create the invitation!",sub:"Fill in the details, it takes 2 minutes",kid:"Baby's name",age:"Turning (age)",date:"Date",time:"Time",place:"Address",msg:"Short message (optional)",dress:"Theme or dress code (optional)",rsvpBy:"RSVP by (optional)",phone:"Parent's WhatsApp (with country code)",create:"Create the invitation",need:"Fill in name, age, date, time and address.",tap:"TAP TO MAKE IT SNOW!",invited:"Join us for the winter party of",years:"YEAR!",yearsP:"YEARS!",where:"WHERE",maps:"Get directions",cal:"Add to calendar",rsvp:"RSVP on WhatsApp",dressL:"DRESS CODE",replyBy:"Kindly reply by",rsvpMsg:"Hi! We're coming to the birthday party of",name:"Guest name",back:"Back to the form",cs:"YOU'RE INVITED TO THE PARTY OF",i1:"One snowy winter day...",i2:"a very special invitation arrived",replay:"Watch again",son:"Sound: on",soff:"Sound: off"},
+es:{title:"¡Crea la invitación!",sub:"Rellena los datos, tardas 2 minutos",kid:"Nombre del bebé",age:"Cumple (años)",date:"Fecha",time:"Hora",place:"Dirección",msg:"Mensaje corto (opcional)",dress:"Temática o vestimenta (opcional)",rsvpBy:"Confirmar antes de (opcional)",phone:"WhatsApp de mamá o papá (con prefijo)",create:"Crear la invitación",need:"Rellena el nombre, la edad, la fecha, la hora y la dirección.",tap:"¡TOCA PARA QUE NIEVE!",invited:"Ven a la fiesta de invierno de",years:"¡AÑITO!",yearsP:"¡AÑOS!",where:"DÓNDE",maps:"Cómo llegar",cal:"Añadir al calendario",rsvp:"Confirmar por WhatsApp",dressL:"VESTIMENTA",replyBy:"Confirma antes del",rsvpMsg:"¡Hola! Vamos al cumple de",name:"Nombre del invitado",back:"Volver al formulario",cs:"¡ESTÁS INVITADO AL CUMPLE DE!",i1:"Un día de invierno...",i2:"llegó una invitación muy especial",replay:"Ver de nuevo",son:"Sonido: activado",soff:"Sonido: desactivado"}};
+const $=i=>document.getElementById(i);
+let lang=(navigator.language||'es').indexOf('es')===0?'es':'en',D=null,sd=61,sound=true,ready=false,opened=false,tm=[];
+const rnd=()=>{sd=(sd*9301+49297)%233280;return sd/233280;};
+const pad=n=>String(n).padStart(2,'0');
+const stp=x=>x.getFullYear()+pad(x.getMonth()+1)+pad(x.getDate())+'T'+pad(x.getHours())+pad(x.getMinutes())+'00';
+const O='#1d2a5a';
+(function(){let p=[];for(let i=0;i<24;i++){const a=i/24*Math.PI*2,r=i%2?28:32;p.push((Math.cos(a)*r).toFixed(1)+','+(Math.sin(a)*r).toFixed(1));}$('wp').setAttribute('d','M'+p.join('L')+'Z');
+let s='';for(let k=0;k<6;k++){s+='<g transform="rotate('+(k*60)+')"><line y1="0" y2="-13"/><line x1="0" y1="-8" x2="-4" y2="-12"/><line x1="0" y1="-8" x2="4" y2="-12"/></g>';}$('sf').innerHTML=s;})();
+(function(){let o='<circle r="320" fill="url(#rg)" opacity=".5"/>';for(let i=0;i<16;i++){o+='<path d="M0,0 L-24,-320 L24,-320Z" fill="#fff" opacity="'+(i%2?.35:.6)+'" transform="rotate('+(i*22.5)+')"/>';}$('rys').innerHTML=o;})();
+(function(){let h='';for(let i=0;i<34;i++){const s=(rnd()*6+3).toFixed(1);h+='<i style="left:'+(rnd()*100).toFixed(1)+'%;width:'+s+'px;height:'+s+'px;animation-duration:'+(rnd()*5+5).toFixed(1)+'s;animation-delay:-'+(rnd()*8).toFixed(1)+'s;--dx:'+((rnd()-.5)*60).toFixed(0)+'px"></i>';}$('snow').innerHTML=h;})();
+const spark=(x,y,s,c,anim,d)=>'<g transform="translate('+x+' '+y+') scale('+s+')"><path'+(anim?' class="st" style="animation-delay:'+d+'s"':'')+' d="M0,-12 C1.5,-2 2,-1.5 12,0 C2,1.5 1.5,2 0,12 C-1.5,2 -2,1.5 -12,0 C-2,-1.5 -1.5,-2 0,-12Z" fill="'+(c||'#fff')+'" stroke="'+O+'" stroke-width="1.6"/></g>';
+const face=(r,dx,dy,bk)=>'<g transform="translate('+(dx||0)+' '+(dy||0)+')"><g class="ey"><ellipse cx="'+(-r*.32)+'" cy="'+(-r*.05)+'" rx="'+(r*.13)+'" ry="'+(r*.2)+'" fill="'+O+'"/><ellipse cx="'+(r*.32)+'" cy="'+(-r*.05)+'" rx="'+(r*.13)+'" ry="'+(r*.2)+'" fill="'+O+'"/><circle cx="'+(-r*.36)+'" cy="'+(-r*.13)+'" r="'+(r*.06)+'" fill="#fff"/><circle cx="'+(r*.28)+'" cy="'+(-r*.13)+'" r="'+(r*.06)+'" fill="#fff"/></g><ellipse cx="'+(-r*.55)+'" cy="'+(r*.2)+'" rx="'+(r*.14)+'" ry="'+(r*.08)+'" fill="#ff8fb3" opacity=".85"/><ellipse cx="'+(r*.55)+'" cy="'+(r*.2)+'" rx="'+(r*.14)+'" ry="'+(r*.08)+'" fill="#ff8fb3" opacity=".85"/>'+(bk?'<path d="M'+(-r*.12)+','+(r*.14)+' L0,'+(r*.3)+' L'+(r*.12)+','+(r*.14)+'Z" fill="#ffb347" stroke="'+O+'" stroke-width="1"/>':'<path d="M'+(-r*.14)+','+(r*.18)+' Q0,'+(r*.34)+' '+(r*.14)+','+(r*.18)+'" fill="none" stroke="'+O+'" stroke-width="'+Math.max(1.2,r*.07)+'" stroke-linecap="round"/>')+'</g>';
+function flake(x,y,s,c,anim,d){let g='<g transform="translate('+x+' '+y+') scale('+s+')"><g'+(anim?' class="st" style="animation-delay:'+d+'s"':'')+'>';for(let k=0;k<6;k++){g+='<g transform="rotate('+(k*60)+')"><path d="M-2,0 L-2,-11 L0,-14 L2,-11 L2,0Z" fill="'+(c||'#fff')+'" stroke="'+O+'" stroke-width="1.4" stroke-linejoin="round"/><path d="M0,-7 L-4,-10 M0,-7 L4,-10" stroke="'+O+'" stroke-width="1.4" stroke-linecap="round"/></g>';}g+='<circle r="3" fill="'+(c||'#fff')+'" stroke="'+O+'" stroke-width="1.4"/></g></g>';return g;}
+function snowman(x,y,s,rot){return '<g class="fly"><g transform="translate('+x+' '+y+') rotate('+rot+') scale('+s+')"><path class="arm" d="M12,4 L26,-6 M22,-3 L26,-10" stroke="#7a4a2a" stroke-width="2.5" stroke-linecap="round" fill="none"/><path d="M-12,4 L-24,-4" stroke="#7a4a2a" stroke-width="2.5" stroke-linecap="round"/><circle cy="18" r="17" fill="#fff" stroke="'+O+'" stroke-width="2.5"/><circle cy="-6" r="13" fill="#fff" stroke="'+O+'" stroke-width="2.5"/><path d="M-12,2 Q0,9 12,2 L12,6 Q0,13 -12,6Z" fill="#ff5a7a" stroke="'+O+'" stroke-width="2"/><path d="M6,6 L10,18 L15,16 L11,5Z" fill="#ff5a7a" stroke="'+O+'" stroke-width="2" stroke-linejoin="round"/><path d="M-11,-16 L11,-16 L9,-34 L-9,-34Z" fill="#3a5a9a" stroke="'+O+'" stroke-width="2.5" stroke-linejoin="round"/><rect x="-15" y="-18" width="30" height="5" rx="2" fill="#3a5a9a" stroke="'+O+'" stroke-width="2.5"/><circle cy="14" r="2" fill="'+O+'"/><circle cy="22" r="2" fill="'+O+'"/>'+face(13,0,-6,true)+'</g></g>';}
+function penguin(x,y,s,rot){return '<g class="fly" style="animation-delay:.7s"><g transform="translate('+x+' '+y+') rotate('+rot+') scale('+s+')"><ellipse cx="-8" cy="20" rx="7" ry="3.5" fill="#ffb347" stroke="'+O+'" stroke-width="2"/><ellipse cx="8" cy="20" rx="7" ry="3.5" fill="#ffb347" stroke="'+O+'" stroke-width="2"/><ellipse cy="2" rx="17" ry="20" fill="#2a3f7a" stroke="'+O+'" stroke-width="2.5"/><ellipse cy="6" rx="11" ry="14" fill="#fff"/><path class="arm" d="M14,-2 Q24,4 20,14" fill="#2a3f7a" stroke="'+O+'" stroke-width="2.5"/><path d="M-12,-14 Q0,-26 12,-14 L13,-10 L-13,-10Z" fill="#ff5a7a" stroke="'+O+'" stroke-width="2" stroke-linejoin="round"/><circle cy="-25" r="4" fill="#fff" stroke="'+O+'" stroke-width="2"/>'+face(11,0,-2,true)+'</g></g>';}
+$('envst').innerHTML=flake(46,172,.7,'#fff')+flake(254,164,.6,'#dff3ff')+spark(230,40,.4,'#fff')+spark(64,40,.35,'#fff');
+$('flst').innerHTML=flake(60,24,.5,'#fff')+flake(240,22,.5,'#fff');
+$('hol').innerHTML=flake(54,92,.55,'#fff')+flake(66,86,.35,'#dff3ff');
+$('spr').innerHTML=flake(6,6,1.3,'#fff',1,0)+flake(32,-10,.7,'#dff3ff',1,.5)+flake(296,206,1.1,'#fff',1,.9)+snowman(262,-34,.95,8)+penguin(26,232,.9,-6);
+let bg='';[[36,90,1],[352,80,1.2],[352,262,.8],[26,300,1.1],[196,70,.8],[306,138,.7],[86,158,.6],[340,374,.9],[44,380,.7],[204,392,.6]].forEach((s,i)=>{bg+=(i%2?flake(s[0],s[1],s[2]*.9,'#fff',1,(i*.3).toFixed(2)):spark(s[0],s[1],s[2],'#fff',1,(i*.3).toFixed(2)));});
+bg+='<path d="M0,440 Q60,400 130,418 Q200,436 260,412 Q330,390 388,420 L388,440Z" fill="#fff" stroke="'+O+'" stroke-width="2.5"/>';$('bgs').innerHTML=bg;
+$('cnL').innerHTML=flake(32,34,1.6,'#dff3ff',1,0)+flake(84,22,.8,'#fff',1,.4)+spark(16,84,.6,'#fff',1,.6);
+$('cnR').innerHTML=snowman(64,46,1.1,6)+flake(18,70,.7,'#dff3ff',1,.3);
+function burst(a){let p=[];for(let i=0;i<24;i++){const ang=i/24*Math.PI*2,r=i%2?46:58;p.push((Math.cos(ang)*r).toFixed(1)+','+(Math.sin(ang)*r).toFixed(1));}
+let g='';for(let k=0;k<6;k++)g+='<path d="M-3,0 L-3,-34 L0,-40 L3,-34 L3,0Z" fill="#fff" stroke="'+O+'" stroke-width="2" transform="rotate('+(k*60)+')"/>';
+return '<path d="M'+p.join('L')+'Z" fill="#dff3ff" stroke="'+O+'" stroke-width="3" stroke-linejoin="round"/>'+g+'<circle r="30" fill="#5ab8ff" stroke="'+O+'" stroke-width="3"/><path d="M-22,-10 A24,24 0 0 1 -8,-24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><text y="8" text-anchor="middle" font-family="Mochiy Pop One, sans-serif" font-size="'+(String(a).length>1?28:36)+'" fill="#fff" stroke="'+O+'" stroke-width="2.5" paint-order="stroke">'+a+'</text><text y="22" text-anchor="middle" font-family="Fredoka, sans-serif" font-weight="600" font-size="9" fill="#fff" stroke="'+O+'" stroke-width="2" paint-order="stroke">'+(a==='1'?T[lang].years:T[lang].yearsP)+'</text>';}
+let AC=null;
+function chime(){if(!sound)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();const t0=AC.currentTime;[1318.5,1568,1975.5,2637,3136].forEach((f,i)=>{const o=AC.createOscillator(),g=AC.createGain();o.type='sine';o.frequency.value=f;g.gain.setValueAtTime(0,t0+i*.11);g.gain.linearRampToValueAtTime(.16,t0+i*.11+.02);g.gain.exponentialRampToValueAtTime(.001,t0+i*.11+1.5);o.connect(g);g.connect(AC.destination);o.start(t0+i*.11);o.stop(t0+i*.11+1.6);});
+for(let i=0;i<14;i++){const o=AC.createOscillator(),g=AC.createGain(),t=t0+.4+i*.07;o.type='sine';o.frequency.value=3000+Math.random()*3000;g.gain.setValueAtTime(.04,t);g.gain.exponentialRampToValueAtTime(.001,t+.3);o.connect(g);g.connect(AC.destination);o.start(t);o.stop(t+.35);}}catch(e){}}
+function boom(){const box=$('pts');box.innerHTML='';const shapes=[c=>flake(14,14,.9,c),c=>spark(14,14,.8,c)];const cols=['#fff','#dff3ff','#a58aff','#5ab8ff'];
+for(let i=0;i<36;i++){const a=Math.random()*Math.PI*2,d=110+Math.random()*170;const el=document.createElement('div');el.className='pt';el.style.setProperty('--x',(Math.cos(a)*d).toFixed(0)+'px');el.style.setProperty('--y',(Math.sin(a)*d-40).toFixed(0)+'px');el.style.setProperty('--r',(Math.random()*720-360).toFixed(0)+'deg');el.style.animationDelay=(Math.random()*.25).toFixed(2)+'s';el.innerHTML='<svg width="28" height="28" style="overflow:visible">'+shapes[i%2](cols[i%4])+'</svg>';box.appendChild(el);}}
+function clearT(){tm.forEach(clearTimeout);tm=[];}
+function startCine(){clearT();ready=false;opened=false;const s=$('ew');s.className='stg';$('env').classList.remove('op');$('ew').classList.remove('hd');$('iv').classList.add('hd');$('iv').classList.remove('sh');$('pts').innerHTML='';void s.offsetWidth;s.classList.add('cine');tm.push(setTimeout(()=>{s.classList.add('go');},3800));tm.push(setTimeout(()=>{ready=true;},5000));}
+function paint(){document.querySelectorAll('[data-t]').forEach(e=>e.textContent=T[lang][e.dataset.t]);document.querySelectorAll('.lg button').forEach(b=>b.classList.toggle('on',b.dataset.l===lang));$('snd').textContent=sound?T[lang].son:T[lang].soff;if(D)fill();}
+document.querySelectorAll('.lg button').forEach(b=>b.onclick=()=>{lang=b.dataset.l;paint();});
+$('snd').onclick=()=>{sound=!sound;paint();};
+function fill(){const d=D,dt=new Date(d.d+'T'+d.t);
+$('ie').textContent=d.e+'!';$('cp').textContent=d.e;$('cs').textContent=T[lang].cs;$('burst').innerHTML=burst(d.a.replace(/[^0-9]/g,'').slice(0,2));
+$('im').textContent=d.m;$('im').classList.toggle('hd',!d.m);
+$('idt').textContent=dt.toLocaleDateString(lang,{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+$('iti').textContent=dt.toLocaleTimeString(lang,{hour:'numeric',minute:'2-digit'});
+$('ip').textContent=d.p;$('ic').textContent=d.c;$('icw').classList.toggle('hd',!d.c);
+const ph=d.w.replace(/\D/g,'');$('ar').classList.toggle('hd',!ph);
+if(d.r)$('ir').textContent=new Date(d.r+'T12:00').toLocaleDateString(lang,{month:'long',day:'numeric'});
+$('irw').classList.toggle('hd',!d.r);
+const end=new Date(dt.getTime()+3*3600e3);const ttl=(lang==='es'?'Cumple de ':'')+d.e+(lang==='en'?"'s birthday":'');
+$('am').onclick=()=>openLink('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(d.p));
+$('ac').onclick=()=>openLink('https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(ttl)+'&dates='+stp(dt)+'/'+stp(end)+'&location='+encodeURIComponent(d.p));
+$('ar').onclick=()=>openLink('https://wa.me/'+ph+'?text='+encodeURIComponent(T[lang].rsvpMsg+' '+d.e+'. '+T[lang].name+': '));}
+['fe','fa','fd','ft','fp'].forEach(i=>$(i).addEventListener('input',()=>$('er').classList.add('hd')));
+$('bc').onclick=()=>{D={e:$('fe').value.trim(),a:$('fa').value.trim(),d:$('fd').value,t:$('ft').value,p:$('fp').value.trim(),m:$('fm').value.trim(),c:$('fc').value.trim(),r:$('fr').value,w:$('fw').value.trim()};
+if(!D.e||!D.a||!D.d||!D.t||!D.p){$('er').classList.remove('hd');D=null;return;}
+fill();$('cr').classList.add('hd');$('vw').classList.remove('hd');startCine();};
+$('env').onclick=()=>{if(!ready||opened)return;opened=true;const s=$('ew');chime();s.classList.add('zm');$('fls').classList.remove('on');void $('fls').offsetWidth;$('fls').classList.add('on');boom();$('env').classList.add('op');
+tm.push(setTimeout(()=>{s.classList.remove('cine');},2300));
+tm.push(setTimeout(()=>{s.classList.add('hd');$('iv').classList.remove('hd');requestAnimationFrame(()=>requestAnimationFrame(()=>$('iv').classList.add('sh')));},3000));};
+$('rp').onclick=()=>startCine();
+$('bb').onclick=()=>{clearT();$('vw').classList.add('hd');$('cr').classList.remove('hd');};
+paint();
+</script>
+<script src="/core.js"></script>
+</body>
+</html>
