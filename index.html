@@ -4,8 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>You're Invited</title>
-<meta property="og:title" content="You're invited">
-<meta property="og:description" content="Tap to open your invitation">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Estás invitado · You're invited">
+<meta property="og:description" content="Toca para abrir tu invitación · Tap to open your invitation">
+<meta property="og:image" content="https://pedrotrading311.github.io/invitaciones/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
@@ -189,7 +194,7 @@ $('bc').onclick=function(){var o={e:$('fe').value.trim(),h:$('fh').value.trim(),
 if(!o.e||!o.d||!o.t||!o.p){$('er').classList.remove('hd');return;}
 Object.keys(o).forEach(function(k){if(!o[k])delete o[k];});
 var url=location.origin+location.pathname+'?i='+enc(o);
-$('link').textContent=url;$('bp').href=url;$('bs').href='https://wa.me/?text='+encodeURIComponent(o.e+' - '+url);
+$('link').textContent=url;$('bp').href=url;$('bs').href='https://wa.me/?text='+encodeURIComponent((lang==='es'?'\u2728 Est\u00e1s invitado a ':'\u2728 You\'re invited to ')+o.e+'\n'+(lang==='es'?'Toca el enlace para abrir tu invitaci\u00f3n:':'Tap the link to open your invitation:')+'\n'+url);
 $('out').classList.remove('hd');$('out').scrollIntoView({behavior:'smooth'});};
 $('bk').onclick=function(){navigator.clipboard.writeText($('link').textContent).then(function(){$('bk').textContent=T[lang].copied;});};
 </script>
